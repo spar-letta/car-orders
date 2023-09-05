@@ -1,0 +1,45 @@
+server:
+  port: 8085
+
+eureka:
+  instance:
+    preferIpAddress: true
+    hostname: eureka-0
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    serviceUrl:
+      defaultZone: http://eureka-0.eureka.default.svc.cluster.local:8761/eureka
+#eureka:
+#  client:
+#    register-with-eureka: true
+#    fetch-registry: true
+
+spring:
+  application:
+    name: GATEWAY-SERVICE
+  cloud:
+    gateway:
+      routes:
+        - id: product-service
+          uri: lb://PRODUCT-SERVICE
+          predicates:
+            - Path=/products/**
+          filters:
+            - AuthenticationFilter
+        - id: order-service
+          uri: lb://ORDER-SERVICE
+          predicates:
+            - Path=/orders/**
+          filters:
+            - AuthenticationFilter
+        - id: offices-service
+          uri: lb://OFFICE-SERVICE
+          predicates:
+            - Path=/offices/**
+          filters:
+            - AuthenticationFilter
+        - id: jwt-auth-service
+          uri: lb://LOGIN-SERVICE
+          predicates:
+            - Path=/auth/**

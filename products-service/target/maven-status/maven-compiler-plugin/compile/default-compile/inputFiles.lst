@@ -1,0 +1,9 @@
+/home/palmer/Documents/workspace-spring-tool-suite-4-4.16.0.RELEASE/PROJECT/CARDEAL/cardealers/products-service/src/main/java/com/javenock/productsservice/ProductsServiceApplication.java
+/home/palmer/Documents/workspace-spring-tool-suite-4-4.16.0.RELEASE/PROJECT/CARDEAL/cardealers/products-service/src/main/java/com/javenock/productsservice/exceptions/ProductListIsEmptyException.java
+/home/palmer/Documents/workspace-spring-tool-suite-4-4.16.0.RELEASE/PROJECT/CARDEAL/cardealers/products-service/src/main/java/com/javenock/productsservice/repository/ProductRepository.java
+/home/palmer/Documents/workspace-spring-tool-suite-4-4.16.0.RELEASE/PROJECT/CARDEAL/cardealers/products-service/src/main/java/com/javenock/productsservice/controller/ProductController.java
+/home/palmer/Documents/workspace-spring-tool-suite-4-4.16.0.RELEASE/PROJECT/CARDEAL/cardealers/products-service/src/main/java/com/javenock/productsservice/exceptions/NoSuchProductException.java
+/home/palmer/Documents/workspace-spring-tool-suite-4-4.16.0.RELEASE/PROJECT/CARDEAL/cardealers/products-service/src/main/java/com/javenock/productsservice/service/ProductService.java
+/home/palmer/Documents/workspace-spring-tool-suite-4-4.16.0.RELEASE/PROJECT/CARDEAL/cardealers/products-service/src/main/java/com/javenock/productsservice/request/ProductRequest.java
+/home/palmer/Documents/workspace-spring-tool-suite-4-4.16.0.RELEASE/PROJECT/CARDEAL/cardealers/products-service/src/main/java/com/javenock/productsservice/advice/ProductControllerAdvice.java
+/home/palmer/Documents/workspace-spring-tool-suite-4-4.16.0.RELEASE/PROJECT/CARDEAL/cardealers/products-service/src/main/java/com/javenock/productsservice/model/Product.java

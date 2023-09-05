@@ -1,0 +1,57 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: eureka
+  namespace: monitoring
+  labels:
+    app: eureka
+spec:
+  clusterIP: None
+  selector:
+    app: eureka
+  ports:
+    - port: 80
+      name: eureka
+      targetPort: 8761
+
+---
+apiVersion: apps/v1
+kind: StatefulSet
+metadata:
+  name: eureka
+  namespace: monitoring
+spec:
+  selector:
+    matchLabels:
+      app: eureka
+  serviceName: eureka
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: eureka
+    spec:
+      containers:
+        - name: eureka
+          image: javenockdocker/discovery-svc
+          imagePullPolicy: IfNotPresent
+          ports:
+            - containerPort: 8761
+          env:
+            - name: eureka_service_address
+              value: http://eureka-0.eureka:8761/eureka
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: eureka-lb
+  namespace: monitoring
+  labels:
+    app: eureka
+spec:
+  ports:
+    - port: 80
+      targetPort: 8761
+  selector:
+    app: eureka
+  type: NodePort

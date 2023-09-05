@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: mysql-k8t-config-map
+  namespace: monitoring
+data:
+  mysql-server: mysql
+  mysql-database-name: mysql-k8t
+  mysql-user-name: root

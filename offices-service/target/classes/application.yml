@@ -1,0 +1,33 @@
+server:
+  port: 8081
+spring:
+  data:
+    mongodb:
+      uri: ${MONGO_URL}
+#      host: mongodb
+#      port: 27017
+#      database: office
+
+  application:
+    name: OFFICE-SERVICE
+management:
+  endpoints:
+    web:
+      exposure:
+        include: prometheus
+
+eureka:
+  instance:
+    preferIpAddress: true
+    hostname: eureka-0
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    serviceUrl:
+      defaultZone: http://eureka-0.eureka.default.svc.cluster.local:8761/eureka
+#eureka:
+#  client:
+#    register-with-eureka: true
+#    fetch-registry: true
+
+

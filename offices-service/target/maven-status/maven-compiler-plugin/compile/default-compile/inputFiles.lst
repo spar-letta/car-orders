@@ -1,0 +1,7 @@
+/home/palmer/Documents/workspace-spring-tool-suite-4-4.16.0.RELEASE/PROJECT/CARDEAL/cardealers/offices-service/src/main/java/com/javenock/officesservice/OfficesServiceApplication.java
+/home/palmer/Documents/workspace-spring-tool-suite-4-4.16.0.RELEASE/PROJECT/CARDEAL/cardealers/offices-service/src/main/java/com/javenock/officesservice/controller/OfficesController.java
+/home/palmer/Documents/workspace-spring-tool-suite-4-4.16.0.RELEASE/PROJECT/CARDEAL/cardealers/offices-service/src/main/java/com/javenock/officesservice/repository/OfficesRepository.java
+/home/palmer/Documents/workspace-spring-tool-suite-4-4.16.0.RELEASE/PROJECT/CARDEAL/cardealers/offices-service/src/main/java/com/javenock/officesservice/service/OfficesService.java
+/home/palmer/Documents/workspace-spring-tool-suite-4-4.16.0.RELEASE/PROJECT/CARDEAL/cardealers/offices-service/src/main/java/com/javenock/officesservice/model/Offices.java
+/home/palmer/Documents/workspace-spring-tool-suite-4-4.16.0.RELEASE/PROJECT/CARDEAL/cardealers/offices-service/src/main/java/com/javenock/officesservice/request/OfficeRequest.java
+/home/palmer/Documents/workspace-spring-tool-suite-4-4.16.0.RELEASE/PROJECT/CARDEAL/cardealers/offices-service/src/main/java/com/javenock/officesservice/model/DbSequence.java

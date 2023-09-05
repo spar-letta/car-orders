@@ -1,0 +1,39 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: jwt-service
+  namespace: monitoring
+  labels:
+    app: jwt-service
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: jwt-service
+  template:
+    metadata:
+      labels:
+        app: jwt-service
+    spec:
+      containers:
+        - name: jwt-service
+          image: javenockdocker/jwt-security-svc
+          imagePullPolicy: IfNotPresent
+          ports:
+            - name: http
+              containerPort: 8091
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: jwt-service
+  labels:
+    app: jwt-service
+spec:
+  selector:
+    app: jwt-service
+  ports:
+    - protocol: TCP
+      name: http
+      port: 8091
+      targetPort: 8091

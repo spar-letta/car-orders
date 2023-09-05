@@ -1,0 +1,10 @@
+com/javenock/productsservice/model/Product$ProductBuilder.class
+com/javenock/productsservice/request/ProductRequest.class
+com/javenock/productsservice/service/ProductService.class
+com/javenock/productsservice/exceptions/NoSuchProductException.class
+com/javenock/productsservice/exceptions/ProductListIsEmptyException.class
+com/javenock/productsservice/repository/ProductRepository.class
+com/javenock/productsservice/model/Product.class
+com/javenock/productsservice/advice/ProductControllerAdvice.class
+com/javenock/productsservice/controller/ProductController.class
+com/javenock/productsservice/ProductsServiceApplication.class

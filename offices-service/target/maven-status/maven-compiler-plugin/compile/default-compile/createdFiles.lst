@@ -1,0 +1,8 @@
+com/javenock/officesservice/model/Offices$OfficesBuilder.class
+com/javenock/officesservice/OfficesServiceApplication.class
+com/javenock/officesservice/model/DbSequence.class
+com/javenock/officesservice/service/OfficesService.class
+com/javenock/officesservice/model/Offices.class
+com/javenock/officesservice/request/OfficeRequest.class
+com/javenock/officesservice/controller/OfficesController.class
+com/javenock/officesservice/repository/OfficesRepository.class
